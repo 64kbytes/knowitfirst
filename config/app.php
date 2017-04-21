@@ -177,6 +177,8 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        Baytree\KnowItFirst\KnowItFirstServiceProvider::class
+
     ],
 
     /*
