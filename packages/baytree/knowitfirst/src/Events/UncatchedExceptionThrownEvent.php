@@ -19,9 +19,10 @@ class UncatchedExceptionThrown
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($exception)
     {
         //
+        $this->exception = $exception;
     }
 
     /**
@@ -31,6 +32,6 @@ class UncatchedExceptionThrown
      */
     public function broadcastOn()
     {
-        return new PrivateChannel('channel-name');
+        return []; //new PrivateChannel('channel-name');
     }
 }

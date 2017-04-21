@@ -5,6 +5,7 @@ namespace App\Exceptions;
 use Exception;
 use Illuminate\Auth\AuthenticationException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use Baytree\KnowItFirst\Events\UncatchedExceptionThrown;
 
 class Handler extends ExceptionHandler
 {
@@ -32,6 +33,7 @@ class Handler extends ExceptionHandler
      */
     public function report(Exception $exception)
     {
+        \Event::fire(new UncatchedExceptionThrown($exception));
         parent::report($exception);
     }
 

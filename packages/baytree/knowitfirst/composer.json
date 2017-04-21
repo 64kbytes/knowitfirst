@@ -7,7 +7,9 @@
             "email": "marceloy@helobaytree.com"
         }
     ],
-    "require": {},
+    "require": {
+    	"guzzlehttp/guzzle": "~6.0"
+    },
     "autoload": {
         "classmap": [
             "database"
