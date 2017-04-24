@@ -30,17 +30,14 @@ class SendMessageToSlack
     public function handle(UncatchedExceptionThrown $event)
     {   
 
-        $message = $event->exception->getMessage();
-        $file = $event->exception->getFile();
-        $code = $event->exception->getCode();
-        $line = $event->exception->getLine();
-        $original = (string) $event->exception;
-
-        $r = $this->http->post('https://hooks.slack.com/services/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', [
+        $r = $this->http->post('https://hooks.slack.com/services/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', [
             'json' => [
-                "text" => $message.' at '.$file
+                "text" => "This is a test message",
+                //"channel" => "#devops",
+                "link_names" => 1, 
+                "username" => "myacobs", 
+                "icon_emoji" => ":monkey_face:"
             ]
         ]);
-
     }
 }
