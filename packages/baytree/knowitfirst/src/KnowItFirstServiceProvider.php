@@ -24,6 +24,7 @@ class KnowItFirstServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        // register package events
+        $this->app->register('Baytree\KnowItFirst\EventServiceProvider');
     }
 }
