@@ -17,11 +17,6 @@ class ComposerStaticInitab0a0e87eec9b658837e5d61becfb2f4
         array (
             'Psr\\Http\\Message\\' => 17,
         ),
-        'M' => 
-        array (
-            'Maknz\\Slack\\Laravel\\' => 20,
-            'Maknz\\Slack\\' => 12,
-        ),
         'G' => 
         array (
             'GuzzleHttp\\Psr7\\' => 16,
@@ -42,14 +37,6 @@ class ComposerStaticInitab0a0e87eec9b658837e5d61becfb2f4
         'Psr\\Http\\Message\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/http-message/src',
-        ),
-        'Maknz\\Slack\\Laravel\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/maknz/slack-laravel/src',
-        ),
-        'Maknz\\Slack\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/maknz/slack/src',
         ),
         'GuzzleHttp\\Psr7\\' => 
         array (
