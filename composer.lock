@@ -4,9 +4,45 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7187d2b7971956763eaa6153fcffd86e",
-    "content-hash": "43d3a712d9d0212888b4353d1428d15c",
+    "hash": "6d3e03b9f3a6405cfed785592493907b",
+    "content-hash": "d270052cef67a1d00187875ef2df6b91",
     "packages": [
+        {
+            "name": "64kbytes/slack",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/64kbytes/slack.git",
+                "reference": "b3a2fe7ae5868b7cc70ce4e6e28306bd2d206150"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/64kbytes/slack/zipball/b3a2fe7ae5868b7cc70ce4e6e28306bd2d206150",
+                "reference": "b3a2fe7ae5868b7cc70ce4e6e28306bd2d206150",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "~6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Baytree\\Slack\\": "src/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "M Yacobs",
+                    "email": "marceloy@helobaytree.com"
+                }
+            ],
+            "description": "A thin wrapper around slack API",
+            "support": {
+                "source": "https://github.com/64kbytes/slack/tree/master",
+                "issues": "https://github.com/64kbytes/slack/issues"
+            },
+            "time": "2017-04-25 20:38:06"
+        },
         {
             "name": "guzzlehttp/guzzle",
             "version": "6.2.3",
@@ -239,7 +275,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "64kbytes/slack": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
