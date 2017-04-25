@@ -1,5 +1,5 @@
 {
-    "name": "baytree/knowitfirst",
+    "name": "64kbytes/knowitfirst",
     "description": "Be the first to know when shit hits the fan. This package will catch the exceptions thrown by your crappy Laravel site and send you an annoying message to your Slack. Happy debugging!",
     "authors": [
         {
@@ -13,6 +13,7 @@
             "url": "https://github.com/64kbytes/slack"
         }
     ],
+    "minimum-stability": "dev",
     "require": {
         "64kbytes/slack": "dev-master"
     },
