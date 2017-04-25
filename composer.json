@@ -1,0 +1,18 @@
+{
+    "name": "baytree/knowitfirst",
+    "description": "Be the first to know when shit hits the fan. This package will catch the exceptions thrown by your crappy Laravel site and send you an annoying message to your Slack. Happy debugging!",
+    "authors": [
+        {
+            "name": "M Yacobs",
+            "email": "marceloy@helobaytree.com"
+        }
+    ],
+    "require": {
+    	"guzzlehttp/guzzle": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Baytree\\KnowItFirst\\": "src/"
+        }
+    }
+}
