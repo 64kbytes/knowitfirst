@@ -25,6 +25,11 @@ class UncaughtExceptionEvent
         $this->exception = $exception;
     }
 
+    public function getException()
+    {
+        return $this->exception;
+    }
+
     /**
      * Get the channels the event should broadcast on.
      *

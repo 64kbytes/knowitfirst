@@ -72,22 +72,23 @@ class SendMessageToSlack
 
         $exc_text = new Field();
         $exc_text->title('Message');
-        $exc_text->value($event->exception->getMessage());
+        $exc_text->value($event->getException()->getMessage());
         $exc_text->short(false);
 
         $exc_file = new Field();
         $exc_file->title('File');
-        $exc_file->value($event->exception->getFile());
+        $exc_file->value($event->getException()->getFile());
         $exc_file->short(false);
 
         $exc_line = new Field();
         $exc_line->title('Line');
-        $exc_line->value($event->exception->getLine());
+        $exc_line->value($event->getException()->getLine());
         $exc_line->short(true);
 
         $attachment->fallback($this->getFormattedExceptionText($event))
             ->pretext('KnowItFirst says:')
-            ->author_name(\Config::get('APP_NAME'))
+            ->author_name(\Config::get('app.name'))
+            ->author_link(url('/'))
             ->title(get_class($event->exception))
             ->add_field($exc_text)
             ->add_field($exc_file)
@@ -96,7 +97,6 @@ class SendMessageToSlack
             ->footer($this->slack->getQuote());
 
         $message->add_attachment($attachment)->emoji(':gun:')->username(\Config::get('app.name'));
-
         $this->slack->send($message);
     }
 }
