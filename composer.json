@@ -7,16 +7,6 @@
             "email": "marceloy@helobaytree.com"
         }
     ],
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/64kbytes/slack"
-        }
-    ],
-    "minimum-stability": "dev",
-    "require": {
-        "64kbytes/slack": "dev-master"
-    },
     "autoload": {
         "psr-4": {
             "Baytree\\KnowItFirst\\": "src/"
