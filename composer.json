@@ -11,5 +11,20 @@
         "psr-4": {
             "Baytree\\KnowItFirst\\": "src/"
         }
+    },
+    "scripts": {
+        "makedoc": "./vendor/phpdocumentor/phpdocumentor/bin/phpdoc -d ./src -t docs"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/64kbytes/slack"
+        }
+    ],
+    "require": {
+        "64kbytes/slack": "dev-master"
+    },
+    "require-dev": {
+        "phpdocumentor/phpdocumentor": "2.*"
     }
 }
